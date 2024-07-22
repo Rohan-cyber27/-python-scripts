@@ -2,8 +2,8 @@ import img2pdf
 import os
 
 # Specify the directory containing images
-img_dir = "C:/Users/rohan/OneDrive/Pictures/Camera Roll"
-output_pdf_path = "C:/Users/rohan/OneDrive/Pictures/Camera Roll/image.pdf"
+img_dir =input("enter the file path of images: ")
+output_pdf_path =input("enter the file path were you to save your converted image: ")
 
 # Collect image file paths
 image_files = [os.path.join(img_dir, fname) for fname in os.listdir(img_dir) if fname.endswith(('.jpg', '.jpeg', '.png'))]
